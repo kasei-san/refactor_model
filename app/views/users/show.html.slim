@@ -1,0 +1,24 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @user.name
+p
+  strong Mail:
+  = @user.mail
+p
+  strong Zipcode:
+  = @user.zipcode
+p
+  strong Prefecture code:
+  = @user.prefecture_code
+p
+  strong City code:
+  = @user.city_code
+p
+  strong Address:
+  = @user.address
+
+= link_to 'Edit', edit_user_path(@user)
+'|
+= link_to 'Back', users_path
